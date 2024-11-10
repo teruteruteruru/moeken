@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Meal
 {
     public List<Food> FoodList => FoodList;
@@ -11,7 +12,7 @@ public class Meal
     private List<Food> foodList;
     private float totalCalorie;
 
-    public void AdddFoodToMeal(Food additionalFood)
+    public void AddFoodToMeal(Food additionalFood)
     {
         foodList.Add(additionalFood);
         recaluculateTotalCalorie();
